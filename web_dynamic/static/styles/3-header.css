@@ -1,0 +1,15 @@
+#api_status {
+    float: right;
+    margin-right: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .available {
+    background-color: #ff545f;
+  }
