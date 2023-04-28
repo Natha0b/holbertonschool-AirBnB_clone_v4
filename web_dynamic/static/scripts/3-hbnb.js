@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const url = 'http://0.0.0.0:5001/api/v1/';
+    const url = 'http://localhost:5001/api/v1/';
     $.get(url + 'status/', (data, status) => {
       if (status === 'success' && data.status === 'OK') {
         $('#api_status').addClass('available');
@@ -21,7 +21,7 @@ $(document).ready(function () {
   
     const jsonBody = {};
     $.ajax({
-      url: url + 'places_search/',
+      url: 'http://localhost:5001/api/v1/places_search/',
       type: 'POST',
       data: JSON.stringify(jsonBody),
       contentType: 'application/json ',
